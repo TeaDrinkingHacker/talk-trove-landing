@@ -21,15 +21,18 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-20 bg-white" id="testimonials">
+    <section className="py-20 bg-gradient-to-br from-white to-speaker-light" id="testimonials">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-speaker-navy mb-12 text-center font-inter">
           What People Say
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-6 bg-gray-50 hover:shadow-lg transition-shadow">
-              <Quote className="h-8 w-8 text-speaker-navy mb-4" />
+            <Card 
+              key={index} 
+              className="p-6 bg-white hover:shadow-lg transition-shadow duration-300 border-2 border-speaker-light hover:border-speaker-accent"
+            >
+              <Quote className="h-8 w-8 text-speaker-accent mb-4" />
               <p className="text-speaker-gray mb-4">{testimonial.text}</p>
               <div>
                 <p className="font-semibold text-speaker-navy">{testimonial.author}</p>

@@ -15,8 +15,11 @@ export default {
     extend: {
       colors: {
         speaker: {
-          navy: "#1a365d",
+          navy: "#8B5CF6", // Changed to vibrant purple
           gray: "#4a5568",
+          accent: "#D946EF", // Added magenta accent
+          secondary: "#F97316", // Added bright orange
+          light: "#E5DEFF", // Added soft purple
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,6 +54,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, #8B5CF6 0%, #D946EF 100%)',
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
